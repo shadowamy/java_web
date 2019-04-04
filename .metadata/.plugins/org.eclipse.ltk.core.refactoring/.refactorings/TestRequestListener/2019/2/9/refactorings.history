@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;edu_video&apos;&#x0D;&#x0A;- Original project: &apos;TestRequestListener&apos;&#x0D;&#x0A;- Destination element: &apos;edu_video&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     video3.mp4&#x0D;&#x0A;     video2.mp4&#x0D;&#x0A;     video1.mp4" description="Copy files" element1="WebRoot/video3.mp4" element2="WebRoot/video2.mp4" element3="WebRoot/video1.mp4" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1551181468501" target="/QingGuo/WebContent/edu_video" units="0" version="1.0"/>
+</session>

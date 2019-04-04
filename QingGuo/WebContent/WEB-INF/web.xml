@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>QingGuo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Qbject_nameRequest</display-name>
+    <servlet-name>Qbject_nameRequest</servlet-name>
+    <servlet-class>com.lk.servlet.Qbject_nameRequest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Qbject_nameRequest</servlet-name>
+    <url-pattern>/Qbject_nameRequest</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.lk.listener.setDevId_Listener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>Interest_PreResult</display-name>
+    <servlet-name>Interest_PreResult</servlet-name>
+    <servlet-class>com.lk.servlet.Interest_PreResult</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Interest_PreResult</servlet-name>
+    <url-pattern>/Interest_PreResult</url-pattern>
+  </servlet-mapping>
+</web-app>

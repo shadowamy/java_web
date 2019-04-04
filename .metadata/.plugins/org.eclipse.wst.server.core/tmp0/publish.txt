@@ -1,0 +1,10 @@
+#Tomcat publish data
+#Mon Apr 01 21:26:05 CST 2019
+org.eclipse.jst.jee.server\:jsp=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\jsp
+org.eclipse.jst.jee.server\:TestRequestListener=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\TestRequestListener
+org.eclipse.jst.jee.server\:ajaxtest=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\ajaxtest
+org.eclipse.jst.jee.server\:carManager=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\carManager
+org.eclipse.jst.jee.server\:QingGuo=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\QingGuo
+org.eclipse.jst.jee.server\:response=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\response
+org.eclipse.jst.jee.server\:test1=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\test1
+org.eclipse.jst.jee.server\:Exp3=D\:\\surroundings\\apache-tomcat-9.0.12\\webapps\\Exp3

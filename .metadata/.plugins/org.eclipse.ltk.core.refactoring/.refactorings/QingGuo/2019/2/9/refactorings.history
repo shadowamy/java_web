@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;QingGuo/WebContent/edu_vedio&apos; to &apos;edu_video&apos;" description="Rename resource &apos;edu_vedio&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/edu_vedio" name="edu_video" stamp="1551181342006" updateReferences="true"/>
+</session>

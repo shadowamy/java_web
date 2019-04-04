@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\iot\2019hanjia\socket"/>
+		<item value="D:\iot\2019hanjia\TestRequestListener"/>
+		<item value="D:\课程作业&amp;&amp;学习资料\javaweb\实验\jsp"/>
+		<item value="D:\课程作业&amp;&amp;学习资料\javaweb\TradePayDemo"/>
+		<item value="D:\课程作业&amp;&amp;学习资料\javaweb\DbUtils"/>
+		<item value="D:\课程作业&amp;&amp;学习资料\javaweb\response"/>
+		<item value="D:\iot\资料\naodianbo\脑电波\WEB端\childedu"/>
+		<item value="D:\iot\资料\naodianbo\脑电波\电脑端代码\porttt"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\iot\资料\naodianbo\脑电波\电脑端代码\porttt"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>
