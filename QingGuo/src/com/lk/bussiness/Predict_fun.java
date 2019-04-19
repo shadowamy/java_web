@@ -12,13 +12,15 @@ import com.lk.entity.Things_record;
 public class Predict_fun {
 
 	
-	static public String predict()
+	public static List<Map.Entry<String, Double>> predict()
 	{
 		Call_Allthings_list cal = new Call_Allthings_list();
 		Call_Things_records ctr = new Call_Things_records();
 		
 		Map<String, Double> predict_result = new HashMap<String, Double>();
 		String result = null;
+		
+		List<Map.Entry<String, Double>> wordMap = null;
 		
 		try {
 			
@@ -34,7 +36,7 @@ public class Predict_fun {
 				long pre_time = now_date-before_date;
 				int pre_count = al.getTh_count();
 				String key_name = Text_classfy.name_classfy(record.getRe_name());
-				double pre_grade = (1.0*pre_count)/(1.0*pre_time);
+				double pre_grade = (1.0*pre_count)/(1.0*pre_time/60);
 				
 				if(predict_result.containsKey(key_name))
 				{
@@ -50,7 +52,7 @@ public class Predict_fun {
 				
 			}
 			
-			List<Map.Entry<String, Double>> wordMap = new ArrayList<Map.Entry<String, Double>>(predict_result.entrySet());
+			wordMap = new ArrayList<Map.Entry<String, Double>>(predict_result.entrySet());
 			Collections.sort(wordMap, new Comparator<Map.Entry<String, Double>>() {// ¸ù¾ÝvalueÅÅÐò
 				public int compare(Map.Entry<String, Double> o1, Map.Entry<String, Double> o2) {
 					double result = o2.getValue() - o1.getValue();
@@ -75,7 +77,8 @@ public class Predict_fun {
 		}
 		
 		
-		return result;
+		//return result;
+		return wordMap;
 	}
 	
 	

@@ -1,0 +1,36 @@
+package com.lk.brainWave;
+
+import com.system.trainging.serialport.serialException.ReadDataFromSerialPortFailure;
+import com.system.trainging.serialport.serialException.SerialPortInputStreamCloseFailure;
+import com.system.trainging.serialport.serialException.SerialPortParameterFailure;
+
+import gnu.io.NoSuchPortException;
+import gnu.io.PortInUseException;
+import gnu.io.SerialPort;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			
+			SerialPort serialPort = SerialTool.openPort("com12", 57600);
+			try {
+				
+				SerialTool.readFromPort(serialPort);
+				
+				
+			} catch (ReadDataFromSerialPortFailure | SerialPortInputStreamCloseFailure e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		} catch (SerialPortParameterFailure | NoSuchPortException | PortInUseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

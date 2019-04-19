@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>智能早教辅助系统</title>
 
 	<!-- css -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
@@ -145,7 +145,8 @@ function ask_data()
          </nav>
     </header>   
   <!--==============================content================================-->
-    <section id="content"><div class="ic">More Website Templates @ <a href="" >张丰彦</a>.2017!</div>
+  	<!--
+      <section id="content"><div class="ic">More Website Templates @ <a href="" ></a>.2019!</div>
         <div class="container_12">	
           <div class="grid_4 bot-1">
             <h2 class="top-6 p2">Teachers</h2>
@@ -176,7 +177,8 @@ function ask_data()
                	<a href="#" class="link-2">Read More</a>
               </div>
                 </div>
-            </div>
+            </div> 
+            -->    
             <!--==============================footer=================================-->
             <footer>
               <p>&nbsp;</p>
@@ -185,7 +187,7 @@ function ask_data()
           </div>
           <div class="clear"></div>
         </div>
-    </section>    
+    </section>   
    </div>   
 </body>
 </html>

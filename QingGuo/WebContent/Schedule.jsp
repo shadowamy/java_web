@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>智能早教辅助系统</title>
 
 	<!-- css -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
@@ -43,7 +43,22 @@
 			})		
 		});
 	</script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#lessd").hide();
+	});
+	function More() {
+        $("#resText").css("height","auto");
+        $("#lessd").show();
+        $("#mored").hide();
+    }
+    function Less() {
+        $("#resText").css("height","330px");
+        $("#lessd").hide();
+        $("#mored").show();
+    }	
 	
+	</script>
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -87,7 +102,7 @@
          </nav>
     </header>   
   <!--==============================content================================-->
-    <section id="content"><div class="ic">More Website Templates @ <a href="" >张丰彦</a>2017!</div>
+    <section id="content"><div class="ic">More Website Templates @ <a href="" ></a>2019!</div>
         <div class="container_12">	
           <div class="grid_4 bot-1">
             <h2 class="top-6 p6">About Schedule</h2>
@@ -102,7 +117,7 @@
 
                     <h2 class="clr-6 p6">Events Schedule</h2>
                     <div class="wrap">
-                    	<div >
+                    	<div id="resText" style="height: 330px;">
                             
                             <%
                             	if(list_re!=null)
@@ -112,7 +127,7 @@
                             %>
                             	<div class="p4">
                                 	<p><strong><%=tr.getRe_time() %></strong></p>
-                                	<p>您的孩子接触了<strong><%=tr.getRe_name() %></strong>，对此产生了兴趣， <a href="#" class="link">More...</a></p>
+                                	<p>您的孩子接触了<strong><%=tr.getRe_name() %></strong>，对此产生了兴趣。</p>
                             	</div>	
                             	
                             <%
@@ -122,9 +137,12 @@
                         </div>
                         
                     </div>
-                    <div class="pad-2">
-                    	<a href="#" class="link-2">More Events</a>
-                    </div>
+                    <div class="pad-2" id="mored">
+						<a id="more" href = "javascript:void(0);" onclick ="More()" class="link-2">More Events</a>
+					</div>
+                     <div class="pad-2" id="lessd">
+						<a id="less" href = "javascript:void(0);" onclick ="Less()" class="link-2" >Retract</a>
+				    </div>
                 </div>
             </div>
             <!--==============================footer=================================-->

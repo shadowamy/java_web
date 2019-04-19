@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\iot\competation\挑战杯\FocusTraining"/>
 		<item value="D:\iot\2019hanjia\socket"/>
 		<item value="D:\iot\2019hanjia\TestRequestListener"/>
 		<item value="D:\课程作业&amp;&amp;学习资料\javaweb\实验\jsp"/>

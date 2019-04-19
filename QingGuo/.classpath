@@ -25,6 +25,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/liblinear-1.8.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/libsvm.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/THULAC_java_v1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/RXTXcomm.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.Font"/>
-    <fullyQualifiedTypeName name="cn.lk.util.C3P0Util"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanListHandler"/>
@@ -49,7 +47,6 @@
     <fullyQualifiedTypeName name="com.lk.servlet.Qbject_nameRequest"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="java.net.URLEncoder"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.lk.entity.Allthings_list"/>
     <fullyQualifiedTypeName name="org.thunlp.text.classifiers.BasicTextClassifier"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="com.lk.bussiness.Call_Things_records"/>
     <fullyQualifiedTypeName name="com.lk.TextClassfy.Text_classfy"/>
     <fullyQualifiedTypeName name="com.lk.bussiness.Predict_fun"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.lk.brainWave.BrainWave"/>
+    <fullyQualifiedTypeName name="com.lk.brainWave.SerialTool"/>
 </qualifiedTypeNameHistroy>

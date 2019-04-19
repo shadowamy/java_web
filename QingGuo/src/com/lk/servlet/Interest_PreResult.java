@@ -20,7 +20,7 @@ import com.lk.entity.Things_record;
  * Servlet implementation class Interest_PreResult
  */
 public class Interest_PreResult extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 2L;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -48,8 +48,8 @@ public class Interest_PreResult extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		//out.print("123");
-		String predict = Predict_fun.predict();
-		out.print(predict);
+		//String predict = Predict_fun.predict();
+		//out.print(predict);
 		
 	}
 

@@ -3,12 +3,13 @@
     
 <%@ page import="com.lk.entity.Allthings_list" %>
 <%@ page import="com.lk.bussiness.Call_Allthings_list" %>
+<%@ page import="com.lk.bussiness.Predict_fun" %>
 <%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>智能早教辅助系统</title>
 
 	<!-- css -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
@@ -68,7 +69,17 @@
 			th_nameString += '\''+al.getTh_name()+'\''+',';
 			th_dataString += "{value:"+al.getTh_count()+", name:"+'\''+al.getTh_name()+'\''+"},";
 		}
-
+		
+		String first_interest = "";
+		String interst_name = "";
+		String interst_result = "";
+		List<Map.Entry<String, Double>> list_interst = Predict_fun.predict();
+		first_interest = list_interst.get(0).getKey();
+		for(Map.Entry<String, Double> map:list_interst)
+		{
+			interst_name += '\''+map.getKey()+'\''+',';
+			interst_result += "{value:"+map.getValue()+", name:"+'\''+map.getKey()+'\''+"},";
+		}
 	%>
 </head>
 <body>
@@ -101,25 +112,37 @@
          </nav>
     </header>  
   <!--==============================content================================-->
-    <section id="content"><div class="ic">More Website Templates @ <a href="" >张丰彦</a>2017!</div>
+    <section id="content"><div class="ic">More Website Templates @ <a href="" ></a>2019!</div>
         <div class="container_12">
         <div class="block-1" >
         	<div class="block-1-shadow" style="width: 1000px;height:400px;">
         	<div id="chart_record"  style="width: 600px;height:400px;float:left"></div>
         	
+        	
+        	
+        	</div>
+        	<div class="block-1-shadow" style="width: 1000px;height:400px;">
+        	<div id="chart_interest"  style="width: 600px;height:400px;float:left"></div>
         	<div style="width: 400px;height:400px;float:right">
         		<h>您的孩子最近的兴趣：</h>
-        		<div id="predict_result" style=""></div>
+        		<div id="predict_result" style=""><%=first_interest %></div>
         	</div>
         	</div>
-        	
 		</div>
+		
         <script type="text/javascript">
         	
         	var myChart = echarts.init(document.getElementById('chart_record'));
+        	var myChart2 = echarts.init(document.getElementById('chart_interest'));
 			
         	var option = {
+        			title : {
+        		        text: '接触物体比例',
+        		        subtext: '(v 1.0)',
+        		        x:'center'
+        		    },
         		    tooltip: {
+        		    	
         		        trigger: 'item',
         		        formatter: "{a} <br/>{b}: {c} ({d}%)"
         		    },
@@ -163,8 +186,51 @@
         		        }
         		    ]
         		};
-        		
+        	var option2 = {
+        		    title : {
+        		        text: '兴趣预测比例',
+        		        subtext: 'Algorithm(v 1.0)',
+        		        x:'center'
+        		    },
+        		    tooltip : {
+        		        trigger: 'item',
+        		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+        		    },
+        		    legend: {
+        		        orient: 'vertical',
+        		        left: 'left',
+        		        //data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+        		        data: [<%= interst_name%>]
+        		    },
+        		    series : [
+        		        {
+        		            name: '兴趣',
+        		            type: 'pie',
+        		            radius : '55%',
+        		            center: ['50%', '60%'],
+        		            /*data:[
+        		                {value:335, name:'直接访问'},
+        		                {value:310, name:'邮件营销'},
+        		                {value:234, name:'联盟广告'},
+        		                {value:135, name:'视频广告'},
+        		                {value:1548, name:'搜索引擎'}
+        		            ],*/
+        		            data:[
+        		                <%= interst_result%>
+        		            ],
+        		            itemStyle: {
+        		                emphasis: {
+        		                    shadowBlur: 10,
+        		                    shadowOffsetX: 0,
+        		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+        		                }
+        		            }
+        		        }
+        		    ]
+        		};
+        	
         	myChart.setOption(option);
+        	myChart2.setOption(option2);
         
         </script>
           
@@ -178,7 +244,7 @@
 
 $(document).ready(function(){
 	//alert("hello");
-	predict_interest();
+	//predict_interest();
 	
 });
 

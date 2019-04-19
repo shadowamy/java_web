@@ -5,7 +5,7 @@
 <head>
 
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>智能早教辅助系统</title>
 
 	<!-- css -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
@@ -84,14 +84,14 @@
          </nav>
     </header>   
   <!--==============================content================================-->
-    <section id="content"><div class="ic">More Website Templates @ <a href="" ></a>2017!</div>
+    <section id="content"><div class="ic">More Website Templates @ <a href="" ></a>2019!</div>
         <div class="container_12">	
           <div class="grid_4 bot-1">
             <div class="art"></div>
             <h2 class="top-1 p2"> characteristic </h2>
             <p class="text-1 p3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
             
-            <p class="text-1 top-2 p3">青果培优项目旨在全方位培养孩子的认知能力。 通过物联网智能感官系统及网站作用，孩子穿戴智能手套等产品、观看教育动漫全身心感知触电、触火等感觉，达到教提高孩子安全意识的目的。</p>
+            <p class="text-1 top-2 p3">&nbsp;&nbsp;&nbsp;&nbsp;幼儿期是智力发展的关键时期，根据儿童学习模式的特点分析，绝大部分知识是在玩耍中学到的。我们针对上述情况，开发了一套激发儿童学习兴趣、提高儿童认知能力的早教系统。<br/>&nbsp;&nbsp;&nbsp;&nbsp;本系统由摄像头模块，语音模块，树莓派，云服务器等模块组成。<br/>&nbsp;&nbsp;&nbsp;&nbsp;本系统的核心是利用摄像头捕捉物体关键信息，基于树莓派与pc端对图像进行处理，将所得数据上传至云服务器以科学的算法进行分析，得出儿童的兴趣，与儿童进行交互，向家长反馈儿童的学习情况。</p>
             <p>&nbsp;</p>
             <a href="#" class="link-1 top-3">News Archive</a>
           </div>
