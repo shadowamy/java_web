@@ -54,7 +54,7 @@ public class Qbject_nameRequest extends HttpServlet{
 		
 		String key = request.getParameter("key");
 		
-		System.out.println("obj_request: "+key);
+		//System.out.println("obj_request: "+key);
 		
 		request.setAttribute("devName", key);
 		//request.setAttribute("k", v);

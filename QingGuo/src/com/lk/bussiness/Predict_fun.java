@@ -36,7 +36,7 @@ public class Predict_fun {
 				long pre_time = now_date-before_date;
 				int pre_count = al.getTh_count();
 				String key_name = Text_classfy.name_classfy(record.getRe_name());
-				double pre_grade = (1.0*pre_count)/(1.0*pre_time/60);
+				double pre_grade = (1.0*pre_count)/(1.0*Math.log(pre_time/60));
 				
 				if(predict_result.containsKey(key_name))
 				{

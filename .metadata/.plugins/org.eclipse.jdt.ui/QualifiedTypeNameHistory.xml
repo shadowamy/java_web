@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanListHandler"/>
-    <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.ArrayListHandler"/>
-    <fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
-    <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
-    <fullyQualifiedTypeName name="cn.lvb.bao.violationData2"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -23,13 +16,9 @@
     <fullyQualifiedTypeName name="cn.lk.bean.call_violationDataDB"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="cn.lvb.bao.Paging"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
-    <fullyQualifiedTypeName name="java.io.OutputStream"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="ImageResult"/>
@@ -37,7 +26,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.io.DataInputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.net.Socket"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.lk.brainWave.BrainWave"/>
     <fullyQualifiedTypeName name="com.lk.brainWave.SerialTool"/>
+    <fullyQualifiedTypeName name="cn.lk.entity.User"/>
+    <fullyQualifiedTypeName name="com.alibaba.fastjson.JSON"/>
+    <fullyQualifiedTypeName name="cn.lk.dao.CallUser"/>
+    <fullyQualifiedTypeName name="cn.lk.servlet.AddNewContact"/>
+    <fullyQualifiedTypeName name="cn.lk.entity.ContactMsg"/>
+    <fullyQualifiedTypeName name="cn.lk.dao.CallContactMsg"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base64"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 </qualifiedTypeNameHistroy>
